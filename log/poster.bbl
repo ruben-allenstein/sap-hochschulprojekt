@@ -1,0 +1,283 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{apa/global//global/global}
+    \entry{mf2013}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=9681907277359cb6546e38c313fec28c}{%
+           family={Heuzeroth},
+           familyi={H\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {de}%
+      }
+      \strng{namehash}{9681907277359cb6546e38c313fec28c}
+      \strng{fullhash}{9681907277359cb6546e38c313fec28c}
+      \strng{bibnamehash}{9681907277359cb6546e38c313fec28c}
+      \strng{authorbibnamehash}{9681907277359cb6546e38c313fec28c}
+      \strng{authornamehash}{9681907277359cb6546e38c313fec28c}
+      \strng{authorfullhash}{9681907277359cb6546e38c313fec28c}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{02}
+      \field{title}{Facebooks Metaverse}
+      \field{urlday}{21}
+      \field{urlmonth}{7}
+      \field{urlyear}{2022}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.welt.de/wirtschaft/article237172063/Facebook-Was-Zuckerberg-mit-Metaverse-plant.html
+      \endverb
+      \verb{url}
+      \verb https://www.welt.de/wirtschaft/article237172063/Facebook-Was-Zuckerberg-mit-Metaverse-plant.html
+      \endverb
+    \endentry
+    \entry{mf2006}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b8c52455691c9536aed3b5c4fc3c012a}{%
+           family={Just-Growth},
+           familyi={J\bibinithyphendelim G\bibinitperiod}}}%
+      }
+      \strng{namehash}{b8c52455691c9536aed3b5c4fc3c012a}
+      \strng{fullhash}{b8c52455691c9536aed3b5c4fc3c012a}
+      \strng{bibnamehash}{b8c52455691c9536aed3b5c4fc3c012a}
+      \strng{authorbibnamehash}{b8c52455691c9536aed3b5c4fc3c012a}
+      \strng{authornamehash}{b8c52455691c9536aed3b5c4fc3c012a}
+      \strng{authorfullhash}{b8c52455691c9536aed3b5c4fc3c012a}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{01}
+      \field{title}{Was ist das Metaverse? – Einfach erklärt}
+      \field{urlday}{21}
+      \field{urlmonth}{7}
+      \field{urlyear}{2022}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://just-growth.com/was-ist-das-metaverse-einfach-erklaert/
+      \endverb
+      \verb{url}
+      \verb https://just-growth.com/was-ist-das-metaverse-einfach-erklaert/
+      \endverb
+    \endentry
+    \entry{mf2009}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e98f4e6acc67440947562ec624d13712}{%
+           family={Kultur},
+           familyi={K\bibinitperiod},
+           given={SRF},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {de}%
+      }
+      \strng{namehash}{e98f4e6acc67440947562ec624d13712}
+      \strng{fullhash}{e98f4e6acc67440947562ec624d13712}
+      \strng{bibnamehash}{e98f4e6acc67440947562ec624d13712}
+      \strng{authorbibnamehash}{e98f4e6acc67440947562ec624d13712}
+      \strng{authornamehash}{e98f4e6acc67440947562ec624d13712}
+      \strng{authorfullhash}{e98f4e6acc67440947562ec624d13712}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{05}
+      \field{title}{Schöner leben im Metaverse? Der philosophische Stammtisch | Sternstunde Philosophie}
+      \field{urlday}{21}
+      \field{urlmonth}{7}
+      \field{urlyear}{2022}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.youtube.com/watch?v=mdL28hhFK-g
+      \endverb
+      \verb{url}
+      \verb https://www.youtube.com/watch?v=mdL28hhFK-g
+      \endverb
+    \endentry
+    \entry{mf2011}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b6755d218d5f4e1cef9cce9cc39aeda9}{%
+           family={Meta},
+           familyi={M\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{b6755d218d5f4e1cef9cce9cc39aeda9}
+      \strng{fullhash}{b6755d218d5f4e1cef9cce9cc39aeda9}
+      \strng{bibnamehash}{b6755d218d5f4e1cef9cce9cc39aeda9}
+      \strng{authorbibnamehash}{b6755d218d5f4e1cef9cce9cc39aeda9}
+      \strng{authornamehash}{b6755d218d5f4e1cef9cce9cc39aeda9}
+      \strng{authorfullhash}{b6755d218d5f4e1cef9cce9cc39aeda9}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{02}
+      \field{title}{Building the Metaverse With Diversity and Inclusion from the Start}
+      \field{urlday}{21}
+      \field{urlmonth}{7}
+      \field{urlyear}{2022}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://about.fb.com/news/2022/02/building-the-metaverse-with-diversity-and-inclusion-from-the-start/
+      \endverb
+      \verb{url}
+      \verb https://about.fb.com/news/2022/02/building-the-metaverse-with-diversity-and-inclusion-from-the-start/
+      \endverb
+    \endentry
+    \entry{mf2012}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b8d492c25ae0512de3427754a75e71c7}{%
+           family={Raeder},
+           familyi={R\bibinitperiod},
+           given={Janina},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {de}%
+      }
+      \strng{namehash}{b8d492c25ae0512de3427754a75e71c7}
+      \strng{fullhash}{b8d492c25ae0512de3427754a75e71c7}
+      \strng{bibnamehash}{b8d492c25ae0512de3427754a75e71c7}
+      \strng{authorbibnamehash}{b8d492c25ae0512de3427754a75e71c7}
+      \strng{authornamehash}{b8d492c25ae0512de3427754a75e71c7}
+      \strng{authorfullhash}{b8d492c25ae0512de3427754a75e71c7}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{05}
+      \field{title}{Das Metaverse – ein Blick in die Zukunft}
+      \field{urlday}{21}
+      \field{urlmonth}{7}
+      \field{urlyear}{2022}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.hs-fresenius.de/blog/aktuelles/das-metaverse-ein-blick-in-die-zukunft/
+      \endverb
+      \verb{url}
+      \verb https://www.hs-fresenius.de/blog/aktuelles/das-metaverse-ein-blick-in-die-zukunft/
+      \endverb
+    \endentry
+    \entry{mf2008}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=cc246644c6efc3af9d62fcd17a35b147}{%
+           family={Withings},
+           familyi={W\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {de}%
+      }
+      \strng{namehash}{cc246644c6efc3af9d62fcd17a35b147}
+      \strng{fullhash}{cc246644c6efc3af9d62fcd17a35b147}
+      \strng{bibnamehash}{cc246644c6efc3af9d62fcd17a35b147}
+      \strng{authorbibnamehash}{cc246644c6efc3af9d62fcd17a35b147}
+      \strng{authornamehash}{cc246644c6efc3af9d62fcd17a35b147}
+      \strng{authorfullhash}{cc246644c6efc3af9d62fcd17a35b147}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{02}
+      \field{title}{Eskapismus: gefährlicher Trend oder eine dringend benötigte Pause von der Realität?}
+      \field{urlday}{21}
+      \field{urlmonth}{7}
+      \field{urlyear}{2022}
+      \field{year}{2021}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://blog.withings.com/de/2021/02/02/eskapismus-gefahrlicher-trend-oder-eine-dringend-benotigte-pause-von-der-realitat/
+      \endverb
+      \verb{url}
+      \verb https://blog.withings.com/de/2021/02/02/eskapismus-gefahrlicher-trend-oder-eine-dringend-benotigte-pause-von-der-realitat/
+      \endverb
+    \endentry
+    \entry{mf2010}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=6bcfcb8a35569d69406244df3d8be3c8}{%
+           family={ZDF},
+           familyi={Z\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {de}%
+      }
+      \strng{namehash}{6bcfcb8a35569d69406244df3d8be3c8}
+      \strng{fullhash}{6bcfcb8a35569d69406244df3d8be3c8}
+      \strng{bibnamehash}{6bcfcb8a35569d69406244df3d8be3c8}
+      \strng{authorbibnamehash}{6bcfcb8a35569d69406244df3d8be3c8}
+      \strng{authornamehash}{6bcfcb8a35569d69406244df3d8be3c8}
+      \strng{authorfullhash}{6bcfcb8a35569d69406244df3d8be3c8}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{07}
+      \field{title}{Utopia - Silicon Valley}
+      \field{urlday}{21}
+      \field{urlmonth}{7}
+      \field{urlyear}{2022}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.zdf.de/nachrichten/digitales/silicon-valley-doku-claus-kleber-100.html
+      \endverb
+      \verb{url}
+      \verb https://www.zdf.de/nachrichten/digitales/silicon-valley-doku-claus-kleber-100.html
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
