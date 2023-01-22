@@ -2,7 +2,7 @@
 In unserem Bachelorprojekt geht es im Wesentlichen um den Entwurf und die Umsetzung einer docker-basierten Live-Monitoring-Anwendung für Sales-Daten im Kontext des Themas Business Intelligence.
 \newline
 \newline
-Dabei verfolgten wir zum einen das Ziel, über einen Java Stack und mit ABAP die Daten aus einem Quellsystemen zu jeder Zeit aktuell zu halten und über ein interaktives Dashboard abzurufen. Über einen Java Connector entwickelten wir eine Verbindung zwischen SAP und dem Java-Client auf. Ein zweites Ziel war es, über ein CSV-Connector eine Verbindung zwischen FTP-Server und CSV-Daten herzustellen, damit eine Echtzeit-Datenänderungsaufzeichnung auch hier ermöglicht wird.
+Dabei verfolgten wir zum einen das Ziel, über einen Java Stack und mit ABAP die Daten aus einem Quellsystemen zu jeder Zeit aktuell zu halten und über ein interaktives Dashboard abzurufen. Über einen Java-Connector entwickelten wir eine Verbindung zwischen SAP und dem Java-Client auf. Ein zweites Ziel war es, über ein CSV-Connector eine Verbindung zwischen FTP-Server und CSV-Daten herzustellen, damit eine Echtzeit-Datenänderungsaufzeichnung auch hier ermöglicht wird.
 \newline
 Die extrahierten Daten der verschiedenen Quellen sollen dann in einer eigenen Datenbank im Backend konsolidiert und entsprechend transformiert werden.
 \newline
@@ -42,7 +42,7 @@ Um mit BI Ergebnisse zu erfassen, arbeiten wir mit Kennzahlen, also mit messbare
 Im Hintergrund für das Live-Monitoring können zwei verschiedene Prozesse bedient werden. Der SAP-Prozess und der CSV-Prozess.
 \newline
 \newline
-Beim SAP-Prozess nutzen wir die Anbindung eines Java-Clients an ein SAP-Server mit ABAP, die wir mit Hilfe eines Java-Connectors (JCO) herstellen können. Der JCO ist unsere Middleware-Komponente, die die Kommunikation zwischen Java-Komponenten und Java-Anwendungsservern mit dem SAP Server über ABAP ermöglicht.
+Beim SAP-Prozess nutzen wir die Anbindung eines Java-Clients an ein SAP-Server mit ABAP, die wir mit Hilfe eines Java-Connectors (JCo) herstellen können. Der JCo ist unsere Middleware-Komponente, die die Kommunikation zwischen Java-Komponenten und Java-Anwendungsservern mit dem SAP Server über ABAP ermöglicht.
 
 \includegraphics[width=\linewidth]{src/abbildungen/architektur_connector.png}
 \newline
@@ -50,12 +50,12 @@ Beim SAP-Prozess nutzen wir die Anbindung eines Java-Clients an ein SAP-Server m
 \newline
 
 \subsection*{Funktionsweise der Konnektoren}
-Nachdem die Anbindung über den JCO an den ABAP-Server hergestellt wurde, ist es möglich, Datenveränderungen auf dem ABAP-Server festzustellen. Wenn über die Oberfläche des ABAP-Servers direkt Daten verändert werden, kann die veränderte Tabelle mit Hilfe eines Outbound-Calls übermittelt werden.
+Nachdem die Anbindung über den JCo an den ABAP-Server hergestellt wurde, ist es möglich, Datenveränderungen auf dem ABAP-Server festzustellen. Wenn über die Oberfläche des ABAP-Servers direkt Daten verändert werden, kann die veränderte Tabelle mit Hilfe eines Outbound-Calls übermittelt werden.
 \newline
 Über Java werden für jede einzelne Zeile Datentransferobjekte erstellt, die dann an Kafka weitergeleitet werden.
 \newline
 \newline
-Der SAP Java-Connector (JCO) ist eine Middleware-Komponente, die die Kommunikation zwischen Java-Komponenten und Java-Anwendungsservern mit dem SAP Server ABAP ermöglicht.
+Der SAP Java-Connector (JCo) ist eine Middleware-Komponente, die die Kommunikation zwischen Java-Komponenten und Java-Anwendungsservern mit dem SAP Server ABAP ermöglicht.
 \newline
 Durch einen Inbound-Call schickt der Java Client an den ABAP Server einen Request heraus. Die Antwort ist ein Outbound-Call des ABAP Servers an den Java Client.
 \newline
@@ -67,10 +67,12 @@ Die Datei wird dann dann automatisch aus dem Pfad des Ordners verschoben.
 
 \section*{Was passiert im Hintergrund?}
 \includegraphics[width=\linewidth]{src/abbildungen/Architektur.png}
-\newline
 \captionof{figure}{Gesamtarchitektur zum Projektaufbau}
 \newline
-Um unser Ziel, Sales-Daten in Echtzeit zu visualisieren, müssen Frontend, Backend & das Live-Data-Monitoring bei Datenübertragungen etc. das gleiche Format nutzen. Daher war es eine der Hauptaufgaben des Backends, zunächst einen ETL-Prozess aufzubauen, indem die Daten erfasst (Extraktion), im weiteren Verlauf transformiert und nach der Transformation also APIs bereitgestellt werden (Ladeprozess).
+Um unser Ziel, Sales-Daten in Echtzeit zu visualisieren, müssen Frontend, Backend & das Live-Data-Monitoring bei Datenübertragungen etc. das gleiche Format nutzen.
+\newline
+\newline
+Daher war es eine der Hauptaufgaben des Backends, zunächst einen ETL-Prozess aufzubauen, indem die Daten erfasst (Extraktion), im weiteren Verlauf transformiert und nach der Transformation also APIs bereitgestellt werden (Ladeprozess).
 \newline
 
 
@@ -81,21 +83,30 @@ Also Technologien kamen hauptsächlich ein gesammelter Java Stack bestehend aus 
 Zudem nutzten wir neben Docker auch Kafka als Lösungstool, um uns vor den Problemen bei der langsamen Verarbeitung von großen Datensätzen zu schützen. Kafka ist ein sehr beliebtes Tool im Big-Data Umfeld und nutzt eigene Cluster. Kafka stellt Schnittstellen bereit, um große Datenströme in oder aus Drittsystemen zu importieren oder exportieren. (vgl. \cite{kafka2018})
 \newline
 \newline
-Die Persistenz von Kafka ist ebenfalls gut. Bei unserem docker-basierten Setup wurden 130.000 Datentransferobjekte in knapp unter 4 Sekunden an Kafka gesendet.
+Die Persistenz von Kafka ist ebenfalls gut. Bei unserem docker-basierten Setup wurden 130.000 Datentransferobjekte in knapp unter vier Sekunden an Kafka gesendet.
 \newline
-Für das Frontend nutzten wir die Technologien NGINX, TypeScript, vite js und React.
+Für das Frontend nutzten wir die Technologien NginX, TypeScript, vite js und React.
 \section*{Unser Projektfazit}
-Das Projekt zur Entwicklung einer Live-Monitoring-Anwendung im SAP Bereich war für uns ein Erfolg. Wir haben uns in einem Zeitraum von 10 Monaten erfolgreich mit mehreren Technologien im SAP und Java Bereich auseinandersetzen können und viel Erkenntnisse gewinnen können.
+Das Projekt zur Entwicklung einer Live-Monitoring-Anwendung im SAP Bereich war für uns ein Erfolg. Wir haben uns in einem Zeitraum von zehn Monaten erfolgreich mit mehreren Technologien im SAP und Java Bereich auseinandersetzen können und viel Erkenntnisse gewinnen können.
 \newline
-Trotz einiger Herausforderungen und dem Umstand, dass vielleicht nicht immer alle Mitglieder gleichermaßen motiviert waren, haben wir es geschafft, gemeinsam ein erfolgreiches Projekt abzuschließen.
+\newline
+Trotz einiger Herausforderungen konnten Komplikationen gemeisam bewältigt werden, indem sich in schwierigieren Situationen stets gegenseitig motiviert wurde. So war es für uns möglich, gemeinsam ein erfolgreiches Projekt abzuschließen.
 \newline
 \newline
 Das Projektteam bestand aus 21 Personen, die alle ihre Stärken und Fähigkeiten eingebracht haben. Insgesamt war es eine großartige Erfahrung und ein sehr praxisnahes Projekt, das aus unserer Sicht ein wertvoller Beitrag zur Informatik an unserer Hochschule war.
 
 \section*{Frontend}
-Bild unserer Frontendanwendung
-\includegraphics[width=\linewidth]{src/abbildungen/Architektur.png}
 \newline
+\includegraphics[width=\linewidth]{src/abbildungen/Frontend.png}
 \captionof{figure}{Vorschaubild unserer Frontendanwendung}
 \newline
+\newline
+\newline
+Das Frontend stellt den visuellen Teil des Projektes dar. Der Nutzer kann die Daten, die vom Backend kommen, in Form von graphischer sowie tabellarischer Darstellung betrachten, diese individuell für seine persönlichen Zwecke auswerten und verwenden. Dabei besteht die Möglichkeit, verschiedene Abhängigkeiten und Zeiträume zu filtern.
+\newline
+\newline
+Das Frontend wurde mittels folgender Technologien erstellt: React, ein entwicklerfreundliches und zukunftsorientiertes JavaScript Framework, TypeScript, eine Syntaxerweiterung für JavaScript und NginX, ein schneller Web-Server und Tool zur Einbindung eines ReverseProxys.
+\newline
+\newline
+Ein Reverse Proxy ist ein Server, der für uns als Mittelsmann zwischen Client-Anfragen und dem eigentlichen Server agiert. Er empfängt Anfragen von Clients, leitet diese an den eigentlichen Server weiter und gibt die Antworten an den Client zurück. Dies kann verwendet werden, um die Sicherheit und Leistung der Anwendung zu erhöhen, indem es als Firewall dient, die Anfragen filtern kann, und indem es die Last auf mehrere Server verteilt.
 
