@@ -79,22 +79,12 @@ Daher war es eine der Hauptaufgaben des Backends, zunächst einen ETL-Prozess au
 \section*{Angewendete Technologien}
 Also Technologien kamen hauptsächlich ein gesammelter Java Stack bestehend aus dem Framework Spring Boot, Maven und Java selbst vor, um unter anderem die Anbindung der Konnektoren herzustellen.
 \newline
-\newline
 Zudem nutzten wir neben Docker auch Kafka als Lösungstool, um uns vor den Problemen bei der langsamen Verarbeitung von großen Datensätzen zu schützen. Kafka ist ein sehr beliebtes Tool im Big-Data Umfeld und nutzt eigene Cluster. Kafka stellt Schnittstellen bereit, um große Datenströme in oder aus Drittsystemen zu importieren oder exportieren. (vgl. \cite{kafka2018})
 \newline
 \newline
-Die Persistenz von Kafka ist ebenfalls gut. Bei unserem docker-basierten Setup wurden 130.000 Datentransferobjekte in knapp unter vier Sekunden an Kafka gesendet.
+Die Performance von Kafka ist ebenfalls gut. Bei unserem docker-basierten Setup wurden 130.000 Datentransferobjekte in knapp unter vier Sekunden an Kafka gesendet.
 \newline
 Für das Frontend nutzten wir die Technologien NginX, TypeScript, vite js und React.
-\section*{Unser Projektfazit}
-Das Projekt zur Entwicklung einer Live-Monitoring-Anwendung im SAP Bereich war für uns ein Erfolg. Wir haben uns in einem Zeitraum von zehn Monaten erfolgreich mit mehreren Technologien im SAP und Java Bereich auseinandersetzen können und viel Erkenntnisse gewinnen können.
-\newline
-\newline
-Trotz einiger Herausforderungen konnten Komplikationen gemeisam bewältigt werden, indem sich in schwierigieren Situationen stets gegenseitig motiviert wurde. So war es für uns möglich, gemeinsam ein erfolgreiches Projekt abzuschließen.
-\newline
-\newline
-Das Projektteam bestand aus 21 Personen, die alle ihre Stärken und Fähigkeiten eingebracht haben. Insgesamt war es eine großartige Erfahrung und ein sehr praxisnahes Projekt, das aus unserer Sicht ein wertvoller Beitrag zur Informatik an unserer Hochschule war.
-
 \section*{Frontend}
 \newline
 \includegraphics[width=\linewidth]{src/abbildungen/Frontend.png}
@@ -110,3 +100,12 @@ Das Frontend wurde mittels folgender Technologien erstellt: React, ein entwickle
 \newline
 Ein Reverse Proxy ist ein Server, der für uns als Mittelsmann zwischen Client-Anfragen und dem eigentlichen Server agiert. Er empfängt Anfragen von Clients, leitet diese an den eigentlichen Server weiter und gibt die Antworten an den Client zurück. Dies kann verwendet werden, um die Sicherheit und Leistung der Anwendung zu erhöhen, indem es als Firewall dient, die Anfragen filtern kann, und indem es die Last auf mehrere Server verteilt.
 
+
+\section*{Unser Projektfazit}
+Das Projekt zur Entwicklung einer Live-Monitoring-Anwendung im SAP Bereich war für uns ein Erfolg. Wir haben uns in einem Zeitraum von zehn Monaten erfolgreich mit mehreren Technologien im SAP und Java Bereich auseinandersetzen können und viel Erkenntnisse gewinnen können.
+\newline
+\newline
+Trotz einiger Herausforderungen konnten Komplikationen gemeisam bewältigt werden, indem sich in schwierigieren Situationen stets gegenseitig motiviert wurde. So war es für uns möglich, gemeinsam ein erfolgreiches Projekt abzuschließen.
+\newline
+\newline
+Das Projektteam bestand aus 21 Personen, die alle ihre Stärken und Fähigkeiten eingebracht haben. Insgesamt war es eine großartige Erfahrung und ein sehr praxisnahes Projekt, das aus unserer Sicht ein wertvoller Beitrag zur Informatik an unserer Hochschule war.
